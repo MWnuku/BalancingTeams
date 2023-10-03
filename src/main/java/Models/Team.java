@@ -11,9 +11,6 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 	private float avgRate;
 	private int sumOfRates = 0;
 
-	public Team(){
-	}
-
 	public Team(ArrayList<Member> members){
 		this.members = members;
 		for(Member member : members)
@@ -46,20 +43,16 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 	}
 
 	public String printMembers(){
-		String s = "";
+		StringBuilder s = new StringBuilder();
 		for(Member member : this.getMembers()){
-			s += member.getName() + ", ";
+			s.append(member.getName()).append(", ");
 		}
-		s = s.substring(0, s.length() - 2);
-		return s;
+		s = new StringBuilder(s.substring(0, s.length() - 2));
+		return s.toString();
 	}
 
 	public float getAvgRate(){
 		return avgRate;
-	}
-
-	public void setAvgRate(long avgRate){
-		this.avgRate = avgRate;
 	}
 
 	@Override

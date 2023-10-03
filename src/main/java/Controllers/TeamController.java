@@ -14,7 +14,6 @@ public class TeamController{
 			throw new TeamSizeException("Cannot create teams with equal number of members with " + numberOfTeams + " teams and " + members.size() + " members");
 		else{
 			Collections.sort(members);
-			int teamsSize = members.size() / numberOfTeams;
 			ArrayList<Team> teams = new ArrayList<>();
 
 			int left = 0;
@@ -30,10 +29,10 @@ public class TeamController{
 	}
 
 	public static String printTeams(ArrayList<Team> teams){
-		String output = "";
+		StringBuilder output = new StringBuilder();
 		for(int i = 0; i < teams.size(); i++){
-			output += ("Team no " + (i + 1) + " has " + teams.get(i).getMembers().size() + " players (" + teams.get(i).printMembers() + "). Average rate: " + teams.get(i).getAvgRate()) + "\n";
+			output.append("Team no ").append(i + 1).append(" has ").append(teams.get(i).getMembers().size()).append(" players (").append(teams.get(i).printMembers()).append("). Average rate: ").append(teams.get(i).getAvgRate()).append("\n");
 		}
-		return output;
+		return output.toString();
 	}
 }
