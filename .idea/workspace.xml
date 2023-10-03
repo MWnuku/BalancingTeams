@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
+    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest(not finished yet);">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Controllers/TeamControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controllers/TeamControllerTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +71,7 @@
       <recent name="Controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TeamControllerTest">
+  <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="BalancingTeams" />
@@ -130,7 +133,7 @@
       <workItem from="1696337295759" duration="2724000" />
       <workItem from="1696346666977" duration="10439000" />
       <workItem from="1696359288136" duration="181000" />
-      <workItem from="1696359482800" duration="1202000" />
+      <workItem from="1696359482800" duration="1511000" />
     </task>
     <task id="LOCAL-00001" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
       <option name="closed" value="true" />
@@ -148,7 +151,31 @@
       <option name="project" value="LOCAL" />
       <updated>1696363445384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
+      <option name="closed" value="true" />
+      <created>1696363602981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696363602981</updated>
+    </task>
+    <task id="LOCAL-00004" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest(not finished yet);">
+      <option name="closed" value="true" />
+      <created>1696363748887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696363748887</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest(not finished yet);">
+      <option name="closed" value="true" />
+      <created>1696363758027</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696363758027</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
+    <MESSAGE value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest(not finished yet);" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest(not finished yet);" />
   </component>
 </project>
