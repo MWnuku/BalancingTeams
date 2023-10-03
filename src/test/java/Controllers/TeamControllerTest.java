@@ -24,7 +24,7 @@ class TeamControllerTest{
 			ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
 			System.out.println(TeamController.printTeams(resultTeams));
 		} catch(TeamSizeException e){
-			e.printStackTrace();
+			System.err.print(e);
 		}
 	}
 
@@ -45,7 +45,7 @@ class TeamControllerTest{
 			ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
 			System.out.println(TeamController.printTeams(resultTeams));
 		} catch(TeamSizeException e){
-			e.printStackTrace();
+			System.err.print(e);
 		}
 	}
 }

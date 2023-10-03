@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BalancingTeams.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/TeamSizeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,11 +130,32 @@
       <workItem from="1696337295759" duration="2724000" />
       <workItem from="1696346666977" duration="10439000" />
       <workItem from="1696359288136" duration="181000" />
-      <workItem from="1696359482800" duration="869000" />
+      <workItem from="1696359482800" duration="1202000" />
     </task>
+    <task id="LOCAL-00001" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
+      <option name="closed" value="true" />
+      <created>1696363237420</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696363237420</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
+      <option name="closed" value="true" />
+      <created>1696363445384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696363445384</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
   </component>
 </project>
