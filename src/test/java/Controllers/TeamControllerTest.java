@@ -7,6 +7,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 class TeamControllerTest{
 	@Test
 	void sampleDataTest(){
@@ -20,16 +23,17 @@ class TeamControllerTest{
 
 		int numberOfTeams = 3;
 
-		try{
-			ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
-			System.out.println(TeamController.printTeams(resultTeams));
-		} catch(TeamSizeException e){
-			System.err.print(e);
-		}
+		ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
+		assertEquals("""
+				Team no 1 has 2 players (Deborah, Scarlet). Average rate: 5.5
+				Team no 2 has 2 players (Robbie, Johnny). Average rate: 6.5
+				Team no 3 has 2 players (Jude, Juliet). Average rate: 6.0
+				""", TeamController.printTeams(resultTeams));
+
 	}
 
 	@Test
-	void wrongNumberOfTeamsToMembers(){
+	void sevenMembersFor3TeamShouldReturnTeamSizeException(){
 		ArrayList<Member> members = new ArrayList<>();
 		members.add(new Member("Johnny", 8));
 		members.add(new Member("Robbie", 5));
@@ -40,12 +44,8 @@ class TeamControllerTest{
 		members.add(new Member("Monica", 7));
 
 		int numberOfTeams = 3;
-
-		try{
+		assertThrows(TeamSizeException.class, () -> {
 			ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
-			System.out.println(TeamController.printTeams(resultTeams));
-		} catch(TeamSizeException e){
-			System.err.print(e);
-		}
+		});
 	}
 }

@@ -18,6 +18,9 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 		calculateAverageRate();
 	}
 
+	public Team(){
+	}
+
 	public void addMember(Member member){
 		members.add(member);
 		sumOfRates += member.getRate();
@@ -32,6 +35,12 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 
 	private void calculateAverageRate(){
 		avgRate = (float) sumOfRates / members.size();
+	}
+
+	public void removeMember(Member member){
+		members.remove(member);
+		sumOfRates -= member.getRate();
+		calculateAverageRate();
 	}
 
 	public ArrayList<Member> getMembers(){
@@ -49,6 +58,10 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 		}
 		s = new StringBuilder(s.substring(0, s.length() - 2));
 		return s.toString();
+	}
+
+	public int getSumOfRates(){
+		return sumOfRates;
 	}
 
 	public float getAvgRate(){

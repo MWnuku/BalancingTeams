@@ -5,7 +5,6 @@ import Models.Member;
 import Models.Team;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class TeamController{
@@ -16,14 +15,38 @@ public class TeamController{
 			Collections.sort(members);
 			ArrayList<Team> teams = new ArrayList<>();
 
-			int left = 0;
-			int right = members.size() - 1;
-			while(left < right){
-				ArrayList<Member> newTeam = new ArrayList<>(Arrays.asList(members.get(left), members.get(right)));
-				teams.add(new Team(newTeam));
-				left++;
-				right--;
+			for(int i = 0; i < numberOfTeams; i++){
+				teams.add(new Team());
 			}
+
+			int teamSize = members.size() / numberOfTeams;
+			for(int i = 0; i < teamSize; i++){
+				for(int j = 0; j < numberOfTeams; j++){
+					int index = (i * teamSize) + (j + i);
+					teams.get(j).addMember(members.get(index));
+				}
+			}
+
+			boolean swapped = true;
+			while(swapped){
+				swapped = false;
+				Team minRateTeam = findMin(teams);
+				Team maxRateTeam = findMax(teams);
+				float ratesDiff = maxRateTeam.getSumOfRates() - minRateTeam.getSumOfRates();
+				for(int i = 0; i < teamSize; i++){
+					float temp = maxRateTeam.getMembers().get(i).getRate() - minRateTeam.getMembers().get(i).getRate();
+					if(temp >= 1 && temp < ratesDiff){
+						Member maxMemberToSwap = maxRateTeam.getMembers().get(i);
+						Member minMemberToSwap = minRateTeam.getMembers().get(i);
+						minRateTeam.removeMember(minMemberToSwap);
+						maxRateTeam.removeMember(maxMemberToSwap);
+						minRateTeam.addMember(maxMemberToSwap);
+						maxRateTeam.addMember(minMemberToSwap);
+						swapped = true;
+					}
+				}
+			}
+
 			return teams;
 		}
 	}
@@ -35,4 +58,29 @@ public class TeamController{
 		}
 		return output.toString();
 	}
+
+	public static Team findMax(ArrayList<Team> teams){
+		float maxRate = Float.MIN_VALUE;
+		Team maxTeam = new Team();
+		for(Team team : teams){
+			if(team.getAvgRate() > maxRate){
+				maxTeam = team;
+				maxRate = team.getAvgRate();
+			}
+		}
+		return maxTeam;
+	}
+
+	public static Team findMin(ArrayList<Team> teams){
+		float minRate = Float.MAX_VALUE;
+		Team minTeam = new Team();
+		for(Team team : teams){
+			if(team.getAvgRate() < minRate){
+				minTeam = team;
+				minRate = team.getAvgRate();
+			}
+		}
+		return minTeam;
+	}
+
 }
