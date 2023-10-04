@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="4.10&#10;Models: Team(added empty constructor,  remove member, getSumOfRates);&#10;Controller: TeamController(new algorithm, findMin, findMax;&#10;Exception: TeamSizeException(changed parent exception to IllegalArgument);&#10;Tests: TeamControllerTest(test for sample data);">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/TeamSizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exceptions/TeamSizeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/TeamController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Controllers/TeamControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controllers/TeamControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +98,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TeamControllerTest.ninePerson3TeamsData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BalancingTeams" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controllers" />
+      <option name="MAIN_CLASS_NAME" value="Controllers.TeamControllerTest" />
+      <option name="METHOD_NAME" value="ninePerson3TeamsData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TeamControllerTest.wrongNumberOfTeamsToMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BalancingTeams" />
       <extension name="coverage">
@@ -116,12 +132,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.TeamControllerTest.ninePerson3TeamsData" />
       <item itemvalue="JUnit.TeamControllerTest" />
       <item itemvalue="JUnit.TeamControllerTest.wrongNumberOfTeamsToMembers" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TeamControllerTest" />
+        <item itemvalue="JUnit.TeamControllerTest.ninePerson3TeamsData" />
         <item itemvalue="JUnit.TeamControllerTest.wrongNumberOfTeamsToMembers" />
       </list>
     </recent_temporary>
@@ -139,6 +157,8 @@
       <workItem from="1696359288136" duration="181000" />
       <workItem from="1696359482800" duration="2179000" />
       <workItem from="1696424664224" duration="5333000" />
+      <workItem from="1696433788733" duration="3677000" />
+      <workItem from="1696438851630" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
       <option name="closed" value="true" />
