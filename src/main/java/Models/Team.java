@@ -60,6 +60,15 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 		return s.toString();
 	}
 
+	public String printMembersRate(){
+		StringBuilder s = new StringBuilder();
+		for(Member member : this.getMembers()){
+			s.append(member.getRate()).append(", ");
+		}
+		s = new StringBuilder(s.substring(0, s.length() - 2));
+		return s.toString();
+	}
+
 	public int getSumOfRates(){
 		return sumOfRates;
 	}
@@ -101,7 +110,7 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 	}
 
 	@Override
-	public Spliterator spliterator(){
+	public Spliterator<Member> spliterator(){
 		return Iterable.super.spliterator();
 	}
 

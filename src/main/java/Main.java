@@ -19,7 +19,7 @@ public class Main{
 
 		try{
 			ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
-			System.out.println(TeamController.printTeams(resultTeams));
+			System.out.println(TeamController.printTeamsWithDeviation(resultTeams));
 		} catch(TeamSizeException e){
 			e.printStackTrace();
 		}
