@@ -49,6 +49,8 @@ ArrayList<Member>
 
 float averageRate;
 
+Unit test created using JUnit.
+
 int sumOfRates;
 
 Teams calculate avgRate and sumOfRate automaticlly on addition of the member to the team.
