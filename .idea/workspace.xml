@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="4.10&#10;todo: rateStandardDeviation&#10;Controller: TeamController(new algorithm);">
+    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controllers/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controllers/TeamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Controllers/TeamControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controllers/TeamControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -198,7 +195,7 @@
       <workItem from="1696433788733" duration="3677000" />
       <workItem from="1696438851630" duration="3154000" />
       <workItem from="1696487354321" duration="3606000" />
-      <workItem from="1696524014358" duration="2998000" />
+      <workItem from="1696524014358" duration="4392000" />
     </task>
     <task id="LOCAL-00001" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
       <option name="closed" value="true" />
@@ -256,17 +253,37 @@
       <option name="project" value="LOCAL" />
       <updated>1696443650070</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests,">
+      <option name="closed" value="true" />
+      <created>1696527214690</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696527214690</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;" />
     <MESSAGE value="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest(not finished yet);" />
     <MESSAGE value="4.10&#10;Models: Team(added empty constructor,  remove member, getSumOfRates);&#10;Controller: TeamController(new algorithm, findMin, findMax;&#10;Exception: TeamSizeException(changed parent exception to IllegalArgument);&#10;Tests: TeamControllerTest(test for sample data);" />
     <MESSAGE value="4.10&#10;todo: rateStandardDeviation&#10;Controller: TeamController(new algorithm);" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.10&#10;todo: rateStandardDeviation&#10;Controller: TeamController(new algorithm);" />
+    <MESSAGE value="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests," />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests," />
   </component>
 </project>
