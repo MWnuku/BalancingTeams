@@ -4,6 +4,7 @@ import Models.Member;
 import Models.Team;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main{
 	public static void main(String[] args){
@@ -18,7 +19,7 @@ public class Main{
 		int numberOfTeams = 3;
 
 		try{
-			ArrayList<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
+			List<Team> resultTeams = TeamController.createTeams(members, numberOfTeams);
 			System.out.println(TeamController.printTeamsWithDeviation(resultTeams));
 		} catch(TeamSizeException e){
 			e.printStackTrace();

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests,">
+    <list default="true" id="29c467e3-e6a4-4c43-97bc-8473efeb6d89" name="Changes" comment="changed arraylists to lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controllers/TeamControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +198,9 @@
       <workItem from="1696433788733" duration="3677000" />
       <workItem from="1696438851630" duration="3154000" />
       <workItem from="1696487354321" duration="3606000" />
-      <workItem from="1696524014358" duration="4392000" />
+      <workItem from="1696524014358" duration="4547000" />
+      <workItem from="1696866666838" duration="13000" />
+      <workItem from="1697479541937" duration="361000" />
     </task>
     <task id="LOCAL-00001" summary="3.10&#10;Models: Member, Team;&#10;Controller: TeamController;&#10;Exception: TeamSizeException;&#10;Tests: TeamControllerTest;">
       <option name="closed" value="true" />
@@ -261,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696527214690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final commit">
+      <option name="closed" value="true" />
+      <created>1696529856546</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696529856546</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +297,8 @@
     <MESSAGE value="4.10&#10;Models: Team(added empty constructor,  remove member, getSumOfRates);&#10;Controller: TeamController(new algorithm, findMin, findMax;&#10;Exception: TeamSizeException(changed parent exception to IllegalArgument);&#10;Tests: TeamControllerTest(test for sample data);" />
     <MESSAGE value="4.10&#10;todo: rateStandardDeviation&#10;Controller: TeamController(new algorithm);" />
     <MESSAGE value="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests," />
-    <option name="LAST_COMMIT_MESSAGE" value="final commit&#10;TeamController: rateStandardDeviation, printTeamWithRateAndDeviation(for help with testing)&#10;Team: printMembersRate(help with testing)&#10;new tests," />
+    <MESSAGE value="final commit" />
+    <MESSAGE value="changed arraylists to lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed arraylists to lists" />
   </component>
 </project>

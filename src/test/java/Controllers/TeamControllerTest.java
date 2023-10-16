@@ -6,6 +6,7 @@ import Models.Team;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static Controllers.TeamController.createTeams;
 import static Controllers.TeamController.printTeamsWithDeviation;
@@ -15,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class TeamControllerTest{
 	@Test
 	void sevenMembersFor3TeamShouldReturnTeamSizeException(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 		members.add(new Member("Johnny", 8));
 		members.add(new Member("Robbie", 5));
 		members.add(new Member("Juliet", 3));
@@ -30,7 +31,7 @@ class TeamControllerTest{
 
 	@Test
 	void sampleDataTest(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 		members.add(new Member("Johnny", 8));
 		members.add(new Member("Robbie", 5));
 		members.add(new Member("Juliet", 3));
@@ -40,7 +41,7 @@ class TeamControllerTest{
 
 		int numberOfTeams = 3;
 
-		ArrayList<Team> resultTeams = createTeams(members, numberOfTeams);
+		List<Team> resultTeams = createTeams(members, numberOfTeams);
 		assertEquals("""
 				Team no 1 has 2 players (Johnny, Robbie). Average rate: 6.5
 				Team no 2 has 2 players (Jude, Juliet). Average rate: 6.0
@@ -50,14 +51,14 @@ class TeamControllerTest{
 
 	@Test
 	void threeMembers3Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
 		members.add(new Member("Peter", 2));
 
 		int numberOfTeams = 3;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 1 players (Mike). Average rate: 1.0
@@ -68,7 +69,7 @@ class TeamControllerTest{
 
 	@Test
 	void two2two3(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 2));
 		members.add(new Member("Monica", 2));
@@ -76,7 +77,7 @@ class TeamControllerTest{
 		members.add(new Member("Wallace", 3));
 
 		int numberOfTeams = 2;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 2 players (Mike, Wallace). Average rate: 2.5
@@ -86,7 +87,7 @@ class TeamControllerTest{
 
 	@Test
 	void fourMembers2Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -94,7 +95,7 @@ class TeamControllerTest{
 		members.add(new Member("Wallace", 9));
 
 		int numberOfTeams = 2;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 2 players (Mike, Wallace). Average rate: 5.0
@@ -104,7 +105,7 @@ class TeamControllerTest{
 
 	@Test
 	void twoEdgeRatesAnd6SameOnes2Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 4));
@@ -116,7 +117,7 @@ class TeamControllerTest{
 		members.add(new Member("Masha", 9));
 
 		int numberOfTeams = 2;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 4 players (Mike, Adam, Adrian, Masha). Average rate: 4.5
@@ -126,7 +127,7 @@ class TeamControllerTest{
 
 	@Test
 	void nineMembers3TeamsData(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Johnny", 8));
 		members.add(new Member("Robbie", 5));
@@ -140,7 +141,7 @@ class TeamControllerTest{
 
 		int numberOfTeams = 3;
 
-		ArrayList<Team> resultTeams = createTeams(members, numberOfTeams);
+		List<Team> resultTeams = createTeams(members, numberOfTeams);
 		assertEquals("""
 				Team no 1 has 3 players (Mike, Robbie, Jude). Average rate: 5.0
 				Team no 2 has 3 players (Lucas, Deborah, Scarlet). Average rate: 5.0
@@ -150,7 +151,7 @@ class TeamControllerTest{
 
 	@Test
 	void fourteenMember7Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -168,7 +169,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 7;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 2 players (Martin, Bert). Average rate: 6.0
@@ -183,7 +184,7 @@ class TeamControllerTest{
 
 	@Test
 	void fourteenMembers2Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -201,7 +202,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 2;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 7 players (Mike, Adam, Adrian, Masha, Martin, Harry, Wallace). Average rate: 5.571429
@@ -211,7 +212,7 @@ class TeamControllerTest{
 
 	@Test
 	void fifteenMember3Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -230,7 +231,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 3;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 5 players (Mike, Adam, Martin, Wallace, Basha). Average rate: 5.2
@@ -241,7 +242,7 @@ class TeamControllerTest{
 
 	@Test
 	void fifteenMembers5Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -260,7 +261,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 5;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 3 players (Bert, Harry, Peter). Average rate: 5.0
@@ -273,7 +274,7 @@ class TeamControllerTest{
 
 	@Test
 	void sixteenMembers4TeamsData(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -293,7 +294,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 4;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 4 players (Adrian, Anna, Simon, Monica). Average rate: 5.5
@@ -305,7 +306,7 @@ class TeamControllerTest{
 
 	@Test
 	void sixteenMembers2Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -325,7 +326,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 2;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 8 players (Mike, John, Adam, Basha, Masha, Arthur, Harry, Simon). Average rate: 5.375
@@ -335,7 +336,7 @@ class TeamControllerTest{
 
 	@Test
 	void sixteenMembers8Teams(){
-		ArrayList<Member> members = new ArrayList<>();
+		List<Member> members = new ArrayList<>();
 
 		members.add(new Member("Mike", 1));
 		members.add(new Member("Monica", 2));
@@ -355,7 +356,7 @@ class TeamControllerTest{
 		members.add(new Member("Simon", 9));
 
 		int numberOfTeams = 8;
-		ArrayList<Team> teams = createTeams(members, numberOfTeams);
+		List<Team> teams = createTeams(members, numberOfTeams);
 
 		assertEquals("""
 				Team no 1 has 2 players (Martin, Bert). Average rate: 6.0

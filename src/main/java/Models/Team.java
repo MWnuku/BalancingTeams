@@ -1,17 +1,14 @@
 package Models;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Objects;
-import java.util.Spliterator;
+import java.util.*;
 import java.util.function.Consumer;
 
 public class Team implements Iterable<Member>, Comparable<Team>{
-	private ArrayList<Member> members = new ArrayList<>();
+	private List<Member> members = new ArrayList<>();
 	private float avgRate;
 	private int sumOfRates = 0;
 
-	public Team(ArrayList<Member> members){
+	public Team(List<Member> members){
 		this.members = members;
 		for(Member member : members)
 			sumOfRates += member.getRate();
@@ -43,11 +40,11 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 		calculateAverageRate();
 	}
 
-	public ArrayList<Member> getMembers(){
+	public List<Member> getMembers(){
 		return members;
 	}
 
-	public void setMembers(ArrayList<Member> members){
+	public void setMembers(List<Member> members){
 		this.members = members;
 	}
 
@@ -116,7 +113,6 @@ public class Team implements Iterable<Member>, Comparable<Team>{
 
 	@Override
 	public int compareTo(Team otherTeam){
-		// Compare teams based on their average rates
 		return Float.compare(this.avgRate, otherTeam.avgRate);
 	}
 }

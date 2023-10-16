@@ -6,11 +6,12 @@ import Models.Team;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class TeamController{
 
 	//todo
-	public static float rateStandardDeviation(ArrayList<Team> teams){
+	public static float rateStandardDeviation(List<Team> teams){
 		float sumOfAvgRates = 0.0F;
 		for(Team team : teams){
 			sumOfAvgRates += team.getAvgRate();
@@ -26,12 +27,12 @@ public class TeamController{
 		return (float) (Math.round(standardDeviation * 100.0) / 100.0);
 	}
 
-	public static ArrayList<Team> createTeams(ArrayList<Member> members, int numberOfTeams) throws TeamSizeException{
+	public static List<Team> createTeams(List<Member> members, int numberOfTeams) throws TeamSizeException{
 		if(members.size() % numberOfTeams != 0)
 			throw new TeamSizeException("Cannot create teams with equal number of members with " + numberOfTeams + " teams and " + members.size() + " members");
 		else{
 			Collections.sort(members);
-			ArrayList<Team> teams = new ArrayList<>();
+			List<Team> teams = new ArrayList<>();
 
 			for(int i = 0; i < numberOfTeams; i++){
 				teams.add(new Team());
@@ -49,7 +50,7 @@ public class TeamController{
 		}
 	}
 
-	private static ArrayList<Team> optimizeTeams(ArrayList<Team> teams, int teamSize){
+	private static List<Team> optimizeTeams(List<Team> teams, int teamSize){
 		boolean swapped = true;
 		while(swapped){
 			swapped = false;
@@ -85,7 +86,7 @@ public class TeamController{
 		return teams;
 	}
 
-	private static Team findMax(ArrayList<Team> teams){
+	private static Team findMax(List<Team> teams){
 		float maxRate = Float.MIN_VALUE;
 		Team maxTeam = new Team();
 		for(Team team : teams){
@@ -97,7 +98,7 @@ public class TeamController{
 		return maxTeam;
 	}
 
-	private static Team findMin(ArrayList<Team> teams){
+	private static Team findMin(List<Team> teams){
 		float minRate = Float.MAX_VALUE;
 		Team minTeam = new Team();
 		for(Team team : teams){
@@ -109,7 +110,7 @@ public class TeamController{
 		return minTeam;
 	}
 
-	public static String printTeamsWithDeviation(ArrayList<Team> teams){
+	public static String printTeamsWithDeviation(List<Team> teams){
 		StringBuilder output = new StringBuilder();
 		for(int i = 0; i < teams.size(); i++){
 			output.append("Team no ").append(i + 1).append(" has ").append(teams.get(i).getMembers().size()).append(" players (").append(teams.get(i).printMembers()).append("). Average rate: ").append(teams.get(i).getAvgRate()).append("\n");
