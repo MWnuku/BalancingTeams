@@ -10,7 +10,6 @@ import java.util.List;
 
 public class TeamController{
 
-	//todo
 	public static float rateStandardDeviation(List<Team> teams){
 		float sumOfAvgRates = 0.0F;
 		for(Team team : teams){
